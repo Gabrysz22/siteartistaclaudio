@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--
+  ======================================================================
+  SITE OFICIAL DO GABRY22 - COMO EDITAR
+  ======================================================================
+  DIA A DIA (contagem regressiva, aviso do topo, agenda de shows):
+     -> edite SÓ o arquivo  config.js
+
+  UMA VEZ SÓ, antes de publicar:
+     -> use Ctrl+F e procure  SEU-DOMINIO.com  e troque pelo endereço real
+        em: index.html, sitemap.xml e robots.txt
+
+  TEXTOS (biografia, perguntas, links):
+     -> neste arquivo. Cada parte tem um título grande em comentário,
+        como  ========== MÚSICAS ==========  . Use Ctrl+F para achar.
+
+  CORES E FONTES:
+     -> começo do arquivo  style.css
+  ======================================================================
+  -->
+
+  <!-- ========== TÍTULO E DESCRIÇÃO (é o que aparece no Google) ========== -->
+  <title>Gabry22 | Artista de trap do Rio de Janeiro: músicas e biografia</title>
+  <meta name="description" content="Gabry22 é um artista de trap do Rio de Janeiro. Ouça Planta Freestyle, recebi o diagnostico e Mary Renam, veja a biografia e os links oficiais.">
+  <link rel="canonical" href="https://SEU-DOMINIO.com/">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#000000">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <!-- ========== PRÉVIA DO LINK (WhatsApp, Instagram, Facebook) ========== -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Gabry22">
+  <meta property="og:title" content="Gabry22 | Artista de trap do Rio de Janeiro">
+  <meta property="og:description" content="Músicas, biografia e links oficiais do Gabry22.">
+  <meta property="og:url" content="https://SEU-DOMINIO.com/">
+  <!-- Troque por uma imagem sua quando tiver (ideal: 1200x630) -->
+  <meta property="og:image" content="https://i.scdn.co/image/ab67616d0000b273f8e02ddbc183dc7031ef9ae0">
+  <meta property="og:image:alt" content="Capa da música Planta Freestyle, do Gabry22">
+  <meta name="twitter:card" content="summary">
+
+  <!-- ========== FONTES ========== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Instrument+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!--
+  ======================================================================
+  DADOS ESTRUTURADOS (JSON-LD)
+  É isto que ajuda o Google e o Gemini a entender QUEM é o Gabry22 e
+  QUAIS são as músicas. Aqui as vírgulas e aspas precisam estar certas,
+  senão o Google ignora tudo. Depois de editar, teste em:
+  https://search.google.com/test/rich-results
+  ======================================================================
+  -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://SEU-DOMINIO.com/#site",
+        "url": "https://SEU-DOMINIO.com/",
+        "name": "Gabry22",
+        "inLanguage": "pt-BR",
+        "publisher": { "@id": "https://SEU-DOMINIO.com/#artista" }
+      },
+
+      {
+        "@type": "MusicGroup",
+        "@id": "https://SEU-DOMINIO.com/#artista",
+        "name": "Gabry22",
+        "alternateName": ["Gabry 22", "gabryrj22"],
+        "url": "https://SEU-DOMINIO.com/",
+        "description": "Gabry22 é um artista de trap do Rio de Janeiro. Começou a fazer música aos 13 anos e lançou os singles Mary Renam, recebi o diagnostico e Planta Freestyle.",
+        "genre": ["Trap", "Hip hop"],
+        "foundingLocation": {
+          "@type": "Place",
+          "name": "Rio de Janeiro, RJ, Brasil"
+        },
+        "image": "https://i.scdn.co/image/ab67616d0000b273f8e02ddbc183dc7031ef9ae0",
+        "sameAs": [
+          "https://open.spotify.com/intl-pt/artist/11Ne4yXgfb3fofSWsJj02i",
+          "https://www.instagram.com/gabryrj22/"
+        ],
+        "track": [
+          { "@id": "https://SEU-DOMINIO.com/#planta-freestyle" },
+          { "@id": "https://SEU-DOMINIO.com/#recebi-o-diagnostico" },
+          { "@id": "https://SEU-DOMINIO.com/#mary-renam" }
+        ]
+      },
+
+      {
+        "@type": "MusicRecording",
+        "@id": "https://SEU-DOMINIO.com/#planta-freestyle",
+        "name": "Planta Freestyle",
+        "url": "https://SEU-DOMINIO.com/#musicas",
+        "byArtist": { "@id": "https://SEU-DOMINIO.com/#artista" },
+        "datePublished": "2026-08-01",
+        "duration": "PT3M30S",
+        "inLanguage": "pt-BR",
+        "genre": "Trap",
+        "image": "https://i.scdn.co/image/ab67616d0000b273f8e02ddbc183dc7031ef9ae0",
+        "sameAs": "https://open.spotify.com/intl-pt/track/23Tv11xMO4qQljOcAJEzzC",
+        "inAlbum": {
+          "@type": "MusicAlbum",
+          "name": "Planta Freestyle",
+          "albumReleaseType": "https://schema.org/SingleRelease",
+          "url": "https://open.spotify.com/intl-pt/album/1evtX0qtstqFOgJ0XioGRF"
+        }
+      },
+
+      {
+        "@type": "MusicRecording",
+        "@id": "https://SEU-DOMINIO.com/#recebi-o-diagnostico",
+        "name": "recebi o diagnostico",
+        "url": "https://SEU-DOMINIO.com/#musicas",
+        "byArtist": [
+          { "@id": "https://SEU-DOMINIO.com/#artista" },
+          { "@type": "MusicGroup", "name": "BN SANTX" }
+        ],
+        "datePublished": "2025-12-16",
+        "duration": "PT2M2S",
+        "inLanguage": "pt-BR",
+        "genre": "Trap",
+        "image": "https://i.scdn.co/image/ab67616d0000b273694f1054dc38cf2632808962",
+        "sameAs": "https://open.spotify.com/intl-pt/track/0K4JJrnFw1liDBKdCv01nH",
+        "inAlbum": {
+          "@type": "MusicAlbum",
+          "name": "recebi o diagnostico",
+          "albumReleaseType": "https://schema.org/SingleRelease",
+          "url": "https://open.spotify.com/intl-pt/album/1LS9C00LMgmFe4PdejtuUd"
+        }
+      },
+
+      {
+        "@type": "MusicRecording",
+        "@id": "https://SEU-DOMINIO.com/#mary-renam",
+        "name": "Mary Renam",
+        "url": "https://SEU-DOMINIO.com/#musicas",
+        "byArtist": [
+          { "@id": "https://SEU-DOMINIO.com/#artista" },
+          { "@type": "MusicGroup", "name": "JVNP" }
+        ],
+        "datePublished": "2025-08-16",
+        "duration": "PT1M55S",
+        "inLanguage": "pt-BR",
+        "genre": "Trap",
+        "image": "https://i.scdn.co/image/ab67616d0000b273387fdd57087d54da2552a34c",
+        "sameAs": "https://open.spotify.com/intl-pt/track/7kD1kgqAbzCxyiCZntZ8vq",
+        "inAlbum": {
+          "@type": "MusicAlbum",
+          "name": "Mary Renam",
+          "albumReleaseType": "https://schema.org/SingleRelease",
+          "url": "https://open.spotify.com/intl-pt/album/63SCPyqeOdVugwaXNPFl1P"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Liga a central de controle (config.js) e o script que a lê -->
+  <script src="config.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <a class="pular" href="#musicas">Pular para as músicas</a>
+
+  <!-- ========== AVISO NO TOPO (controlado pelo config.js) ========== -->
+  <div class="aviso" id="aviso" hidden>
+    <p class="container aviso__linha">
+      <span id="aviso-texto"></span>
+      <a id="aviso-link" href="#" hidden></a>
+    </p>
+  </div>
+
+  <!-- ========== MENU ========== -->
+  <header class="topo">
+    <div class="container topo__linha">
+      <a class="marca" href="#inicio" aria-label="Gabry22, início">Gabry22</a>
+      <nav aria-label="Menu principal">
+        <ul class="menu">
+          <li><a href="#musicas">Músicas</a></li>
+          <li><a href="#ouvir">Ouvir</a></li>
+          <li id="nav-agenda" hidden><a href="#agenda">Agenda</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#perguntas">Perguntas</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+
+    <!-- ========== INÍCIO (primeira tela) ========== -->
+    <section class="hero">
+      <div class="container hero__grade">
+        <div class="hero__texto">
+          <h1 class="hero__nome">Gabry22</h1>
+          <p class="hero__lead">
+            Gabry22 é um artista de trap do Rio de Janeiro.
+            Ouça <strong>Planta Freestyle</strong>, <strong>recebi o diagnostico</strong>
+            e <strong>Mary Renam</strong> no Spotify.
+          </p>
+          <p class="hero__botoes">
+            <a class="botao botao--cheio" href="https://open.spotify.com/intl-pt/artist/11Ne4yXgfb3fofSWsJj02i" target="_blank" rel="noopener">Ouvir no Spotify</a>
+            <a class="botao" href="https://www.instagram.com/gabryrj22/" target="_blank" rel="noopener">Instagram @gabryrj22</a>
+          </p>
+        </div>
+
+        <figure class="hero__capa">
+          <img src="https://i.scdn.co/image/ab67616d0000b273f8e02ddbc183dc7031ef9ae0"
+               width="640" height="640"
+               alt="Capa da música Planta Freestyle, do Gabry22">
+          <figcaption>Último lançamento: Planta Freestyle, 1 de agosto de 2026</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ========== CONTAGEM REGRESSIVA (controlada pelo config.js) ==========
+         Fica escondida até você ativar no config.js. Não precisa mexer aqui. -->
+    <section class="lapide-secao" id="proximo" aria-labelledby="titulo-proximo" hidden>
+      <div class="container">
+        <div class="lapide">
+          <p class="lapide__rotulo" id="cd-rotulo">Próximo lançamento</p>
+          <h2 id="titulo-proximo"><span id="cd-titulo"></span></h2>
+          <p class="lapide__descricao" id="cd-descricao" hidden></p>
+
+          <div class="relogio" id="cd-relogio" role="timer" aria-live="off">
+            <div class="relogio__item"><span id="cd-dias">00</span><small id="cd-l-dias">dias</small></div>
+            <div class="relogio__item"><span id="cd-horas">00</span><small id="cd-l-horas">horas</small></div>
+            <div class="relogio__item"><span id="cd-min">00</span><small>min</small></div>
+            <div class="relogio__item"><span id="cd-seg">00</span><small>seg</small></div>
+          </div>
+
+          <p class="lapide__data" id="cd-data"></p>
+          <a class="botao botao--cheio" id="cd-link" href="#" hidden></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== MÚSICAS ========== -->
+    <section class="secao" id="musicas" aria-labelledby="titulo-musicas">
+      <div class="container">
+        <h2 id="titulo-musicas">Músicas do Gabry22</h2>
+
+        <ul class="faixas">
+
+          <!-- ---------- MÚSICA 1 (copie um bloco inteiro para adicionar outra) ---------- -->
+          <li class="faixa" id="planta-freestyle">
+            <img class="faixa__capa"
+                 src="https://i.scdn.co/image/ab67616d0000b273f8e02ddbc183dc7031ef9ae0"
+                 width="120" height="120" loading="lazy"
+                 alt="Capa de Planta Freestyle">
+            <div class="faixa__info">
+              <h3>Planta Freestyle</h3>
+              <p class="faixa__marca">Lançamento mais recente</p>
+              <p class="faixa__dados">
+                <time datetime="2026-08-01">1 de agosto de 2026</time>, 3:30
+              </p>
+              <p class="faixa__credito">© 2026 Gabry22. ℗ 2026 O Cemitério Maldito Records.</p>
+            </div>
+            <a class="botao" href="https://open.spotify.com/intl-pt/track/23Tv11xMO4qQljOcAJEzzC" target="_blank" rel="noopener">Ouvir Planta Freestyle</a>
+          </li>
+
+          <!-- ---------- MÚSICA 2 ---------- -->
+          <li class="faixa" id="recebi-o-diagnostico">
+            <img class="faixa__capa"
+                 src="https://i.scdn.co/image/ab67616d0000b273694f1054dc38cf2632808962"
+                 width="120" height="120" loading="lazy"
+                 alt="Capa de recebi o diagnostico">
+            <div class="faixa__info">
+              <h3>recebi o diagnostico</h3>
+              <p class="faixa__feat">com BN SANTX</p>
+              <p class="faixa__dados">
+                <time datetime="2025-12-16">16 de dezembro de 2025</time>, 2:02
+              </p>
+              <p class="faixa__credito">© 2025 O Cemitério Maldito Records. ℗ 2025 Gabry22.</p>
+            </div>
+            <a class="botao" href="https://open.spotify.com/intl-pt/track/0K4JJrnFw1liDBKdCv01nH" target="_blank" rel="noopener">Ouvir recebi o diagnostico</a>
+          </li>
+
+          <!-- ---------- MÚSICA 3 ---------- -->
+          <li class="faixa" id="mary-renam">
+            <img class="faixa__capa"
+                 src="https://i.scdn.co/image/ab67616d0000b273387fdd57087d54da2552a34c"
+                 width="120" height="120" loading="lazy"
+                 alt="Capa de Mary Renam">
+            <div class="faixa__info">
+              <h3>Mary Renam</h3>
+              <p class="faixa__feat">com JVNP</p>
+              <p class="faixa__dados">
+                <time datetime="2025-08-16">16 de agosto de 2025</time>, 1:55
+              </p>
+              <!-- Se quiser mostrar os créditos de Mary Renam, preencha e tire as setas:
+              <p class="faixa__credito">© ... ℗ ...</p> -->
+            </div>
+            <a class="botao" href="https://open.spotify.com/intl-pt/track/7kD1kgqAbzCxyiCZntZ8vq" target="_blank" rel="noopener">Ouvir Mary Renam</a>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== OUVIR (player do Spotify) ==========
+         O player é do próprio Spotify. Se não quiser, apague o <iframe>. -->
+    <section class="secao secao--painel" id="ouvir" aria-labelledby="titulo-ouvir">
+      <div class="container ouvir">
+        <div class="ouvir__texto">
+          <h2 id="titulo-ouvir">Ouça agora</h2>
+          <p>Aperte o play aqui mesmo ou abra o Gabry22 direto no Spotify.</p>
+          <p>
+            <a class="botao botao--cheio" href="https://open.spotify.com/intl-pt/artist/11Ne4yXgfb3fofSWsJj02i" target="_blank" rel="noopener">Abrir no Spotify</a>
+          </p>
+        </div>
+
+        <iframe class="ouvir__player"
+                title="Gabry22 no Spotify"
+                src="https://open.spotify.com/embed/artist/11Ne4yXgfb3fofSWsJj02i"
+                width="100%" height="352" frameborder="0" loading="lazy"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+      </div>
+    </section>
+
+    <!-- ========== AGENDA DE SHOWS (controlada pelo config.js) ==========
+         Fica escondida até você ativar e colocar um show no config.js. -->
+    <section class="secao" id="agenda" aria-labelledby="titulo-agenda" hidden>
+      <div class="container">
+        <h2 id="titulo-agenda">Próximos shows</h2>
+        <ul class="shows" id="agenda-lista"></ul>
+      </div>
+    </section>
+
+    <!-- ========== SOBRE (biografia) ========== -->
+    <section class="secao secao--painel" id="sobre" aria-labelledby="titulo-sobre">
+      <div class="container sobre">
+        <div class="sobre__texto">
+          <h2 id="titulo-sobre">Quem é o Gabry22</h2>
+          <!-- Edite a biografia aqui. Escreva em frases diretas: é o texto que
+               o Google e as IAs mais costumam repetir. -->
+          <p>
+            Gabry22 é um artista de trap do Rio de Janeiro. Começou a fazer música
+            aos 13 anos e traz no som uma mistura de emoção, atitude e referências
+            da nova geração da cena urbana brasileira.
+          </p>
+          <p>
+            Seus lançamentos são Mary Renam (2025, com JVNP), recebi o diagnostico
+            (2025, com BN SANTX) e Planta Freestyle (2026). Todos estão no Spotify
+            e nas principais plataformas de música.
+          </p>
+        </div>
+
+        <!-- Ficha rápida: dados curtos, fáceis de o Google ler -->
+        <dl class="ficha">
+          <div><dt>Nome artístico</dt><dd>Gabry22</dd></div>
+          <div><dt>Estilo</dt><dd>Trap</dd></div>
+          <div><dt>Cidade</dt><dd>Rio de Janeiro, RJ</dd></div>
+          <div><dt>Gravadora</dt><dd>O Cemitério Maldito Records</dd></div>
+          <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/gabryrj22/" target="_blank" rel="noopener">@gabryrj22</a></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ========== PERGUNTAS FREQUENTES ==========
+         Quem pesquisa costuma perguntar exatamente isto. Respostas curtas. -->
+    <section class="secao" id="perguntas" aria-labelledby="titulo-perguntas">
+      <div class="container perguntas">
+        <h2 id="titulo-perguntas">Perguntas frequentes</h2>
+
+        <details>
+          <summary>Quem é o Gabry22?</summary>
+          <p>Gabry22 é um artista de trap do Rio de Janeiro, com músicas lançadas desde 2025.</p>
+        </details>
+        <details>
+          <summary>Quais são as músicas do Gabry22?</summary>
+          <p>Mary Renam (com JVNP, agosto de 2025), recebi o diagnostico (com BN SANTX, dezembro de 2025) e Planta Freestyle (agosto de 2026).</p>
+        </details>
+        <details>
+          <summary>Onde ouvir o Gabry22?</summary>
+          <p>No Spotify e em outras plataformas de música. O botão "Ouvir no Spotify" fica no topo da página.</p>
+        </details>
+        <details>
+          <summary>Qual é o Instagram do Gabry22?</summary>
+          <p>O perfil oficial é @gabryrj22.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- ========== CONTATO E LINKS ========== -->
+    <section class="secao secao--painel" id="contato" aria-labelledby="titulo-contato">
+      <div class="container">
+        <h2 id="titulo-contato">Contato e links oficiais</h2>
+        <p class="contato__texto">
+          Shows, parcerias e imprensa: chame no Instagram
+          <a href="https://www.instagram.com/gabryrj22/" target="_blank" rel="noopener">@gabryrj22</a>.
+        </p>
+
+        <ul class="links">
+          <li><a href="https://open.spotify.com/intl-pt/artist/11Ne4yXgfb3fofSWsJj02i" target="_blank" rel="noopener">Spotify</a></li>
+          <li><a href="https://www.instagram.com/gabryrj22/" target="_blank" rel="noopener">Instagram</a></li>
+          <!-- Quando tiver, tire as setas de comentário e coloque o link certo
+               (e adicione o mesmo link em "sameAs" no JSON-LD lá em cima):
+          <li><a href="COLE-O-LINK-DO-YOUTUBE" target="_blank" rel="noopener">YouTube</a></li>
+          <li><a href="COLE-O-LINK-DO-TIKTOK" target="_blank" rel="noopener">TikTok</a></li>
+          -->
+        </ul>
+
+        <!-- Se tiver um e-mail só para contato profissional, tire as setas:
+        <p class="contato__texto">E-mail: <a href="mailto:SEU-EMAIL@exemplo.com">SEU-EMAIL@exemplo.com</a></p>
+        -->
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== RODAPÉ ========== -->
+  <footer class="rodape">
+    <div class="container rodape__linha">
+      <p>© 2026 Gabry22. Músicas lançadas por O Cemitério Maldito Records.</p>
+      <a href="#inicio">Voltar ao topo</a>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,6 @@
+# Libera o site inteiro para o Google e outros buscadores.
+# Troque SEU-DOMINIO.com pelo endereço real do site.
+User-agent: *
+Allow: /
+
+Sitemap: https://SEU-DOMINIO.com/sitemap.xml

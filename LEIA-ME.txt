@@ -1,0 +1,36 @@
+SITE DO GABRY22 - QG OFICIAL (roxo e preto)
+
+ARQUIVOS
+  index.html   a página (textos, links, biografia e dados para o Google)
+  config.js    CENTRAL DE CONTROLE: contagem regressiva, aviso e agenda
+  style.css    cores e fontes (as cores estão no começo do arquivo)
+  script.js    faz o config.js funcionar (não precisa mexer)
+  favicon.svg  ícone da aba do navegador
+  404.html     página de erro
+  sitemap.xml  lista de páginas para o Google
+  robots.txt   diz aos buscadores que podem ler o site
+
+NO DIA A DIA (anunciar música, aviso, show)
+  Abra só o config.js. Está tudo explicado lá dentro.
+  - ativo: true = aparece | ativo: false = escondido
+  - Para ver a contagem de exemplo, abra o site com ?demo no final
+    do endereço (exemplo: index.html?demo).
+
+ANTES DE PUBLICAR (uma vez só)
+  1. No editor (VS Code), aperte Ctrl+Shift+F, procure SEU-DOMINIO.com
+     e troque pelo endereço real em todos os arquivos.
+  2. Publique (GitHub Pages, Netlify ou Cloudflare Pages são grátis).
+  3. Cadastre o site no Google Search Console e envie o sitemap.xml.
+  4. Teste os dados estruturados em
+     https://search.google.com/test/rich-results
+
+PARA ADICIONAR UMA MÚSICA NOVA (depois que ela sair)
+  - No index.html, copie um bloco <li class="faixa"> inteiro e cole
+    antes do primeiro (a mais nova fica em cima).
+  - Copie também um bloco "MusicRecording" no JSON-LD (começo do arquivo)
+    e adicione o novo @id na lista "track" do artista.
+
+CAPAS
+  As capas carregam direto do Spotify. Para o site não depender disso,
+  baixe as imagens, crie uma pasta "img" e troque os endereços
+  src="https://i.scdn.co/..." por src="img/nome-do-arquivo.jpg".
